@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial; }
+.container { @apply max-w-6xl mx-auto px-6; }
+.btn {
+  @apply inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-medium transition;
+  @apply bg-gradient-to-r from-brand-500 to-brand-700 text-white shadow-glow hover:scale-[1.02] active:scale-[0.98];
+}
+.btn-outline {
+  @apply inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-medium transition border border-gray-300 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/10;
+}
+nav a.active { @apply text-brand-600; }
